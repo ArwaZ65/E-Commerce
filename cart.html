@@ -1,0 +1,36 @@
+<!-- cart.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section id="cart-page">
+        <h2>Your Cart</h2>
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Cart items will be dynamically generated here -->
+            </tbody>
+        </table>
+        <div id="cart-total">
+            <p>Total: $<span id="total-price">0.00</span></p>
+            <button id="btn" onclick="checkout()">Checkout</button>
+        </div>
+        <script src="script.js"></script> <!-- Link to your cart script -->
+    </section>
+    
+</body>
+</html>
